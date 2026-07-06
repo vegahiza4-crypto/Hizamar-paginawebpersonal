@@ -507,7 +507,32 @@ c.innerHTML=`
 
 <hr style="margin:25px 0;">
 
+<h3>Formulario de contacto</h3>
 
+<form action="/guardar" method="POST" style="max-width:500px;margin:auto;text-align:left;">
+
+<label><strong>Nombre:</strong></label><br>
+<input type="text" id="nombre" name="nombre" required
+<input
+req.body.nombre
+req.body.correo
+req.body.mensaje
+
+style="width:100%;padding:10px;margin:8px 0 15px;border:1px solid #ccc;border-radius:5px;">
+
+<label><strong>Correo electrónico:</strong></label><br>
+<input type="email" id="correo" name="correo" required
+style="width:100%;padding:10px;margin:8px 0 15px;border:1px solid #ccc;border-radius:5px;">
+
+<label><strong>Mensaje:</strong></label><br>
+<textarea id="mensaje" name="mensaje" rows="5" required
+style="width:100%;padding:10px;margin:8px 0 15px;border:1px solid #ccc;border-radius:5px;"></textarea>
+<button type="submit"
+style="background:#2c3e50;color:white;padding:12px 20px;border:none;border-radius:5px;cursor:pointer;">
+Enviar
+</button>
+
+</form>
 `;
 }
 
