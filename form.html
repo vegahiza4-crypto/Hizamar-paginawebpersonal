@@ -1,16 +1,29 @@
-<form action="/guardar" method="POST">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
 
-<label>Nombre</label>
-<input type="text" name="nombre">
+<h1>Formulario de Contacto</h1>
 
-<label>Correo</label>
-<input type="email" name="correo">
+<form name="clientes" method="POST" data-netlify="true" action="/gracias.html">
 
-<label>Mensaje</label>
-<textarea name="mensaje"></textarea>
+    <input type="hidden" name="form-name" value="clientes">
 
-<button type="submit">
-Enviar
-</button>
+    <label>Nombre:</label><br>
+    <input type="text" name="nombre" required><br><br>
+
+    <label>Correo:</label><br>
+    <input type="email" name="correo" required><br><br>
+
+    <label>Mensaje:</label><br>
+    <textarea name="mensaje" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
 
 </form>
+
+</body>
+</html>
