@@ -13,7 +13,6 @@ mongoose.connect("mongodb://localhost:27017/formulario");
 const contactoSchema = new mongoose.Schema({
     nombre: String,
     correo: String,
-    asunto: String,
     mensaje: String,
     fecha: { type: Date, default: Date.now }
 });
@@ -25,7 +24,6 @@ app.post("/guardar", async (req, res) => {
     const nuevoContacto = new Contacto({
     nombre: req.body.nombre,
     correo: req.body.correo,
-    asunto: req.body.asunto,
     mensaje: req.body.mensaje
 });
 
